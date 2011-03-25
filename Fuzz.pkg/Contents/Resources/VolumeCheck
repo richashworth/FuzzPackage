@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+PKMKSHELLUTILITY=$PACKAGE_PATH/Contents/Resources/pkmkshellutility
+
+RESULT=`$PKMKSHELLUTILITY --file $1'/usr/local/texlive'`
+if [ $RESULT != true ]; then
+	exit 32
+fi
+
+
+exit 0
